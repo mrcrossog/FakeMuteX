@@ -1,86 +1,79 @@
-FakeMute Plugin for BetterDiscord
-Overview
-FakeMute is a BetterDiscord plugin that allows you to appear muted in Discord voice channels while still being able to speak and hear. It adds a headphone icon button next to the mute and deafen buttons in the Discord interface, with support for customizable keybind combinations, including NumPad keys.
-Warning: Using this plugin may violate Discord's Terms of Service. Use at your own risk.
-Features
+# Плагин FakeMute для BetterDiscord
 
-Fake Mute: Appear muted to others while continuing to speak and hear.
-Customizable Keybinds: Assign key combinations (e.g., Ctrl+Shift+Numpad1) to toggle fake mute.
-NumPad Support: Distinctly recognizes NumPad keys (e.g., Numpad1 vs. Digit1).
-Seamless Integration: The button uses Discord's native styling and aligns with existing voice control buttons.
-Settings Panel: Configure keybinds directly in the BetterDiscord plugin settings.
+## Обзор
 
-Installation
+**FakeMute** — это плагин для BetterDiscord, который позволяет фейково замьютить себя в голосовых каналах Discord, выглядя замьюченным для других, но продолжая говорить и слышать. Плагин добавляет кнопку с иконкой наушников рядом с кнопками мута и дефена в интерфейсе Discord, а также поддерживает настраиваемые комбинации клавиш, включая клавиши NumPad.
 
-Install BetterDiscord: If you haven't already, install BetterDiscord by following the instructions on the BetterDiscord website.
-Download the Plugin:
-Download the FakeMute.plugin.js file from the Releases page or clone this repository.
+> **Предупреждение**: Использование этого плагина может нарушать Условия использования Discord. Используйте на свой страх и риск.
 
+## Возможности
 
-Place the Plugin:
-Move FakeMute.plugin.js to your BetterDiscord plugins folder:
-Windows: %appdata%\BetterDiscord\plugins
-Mac: ~/Library/Application Support/BetterDiscord/plugins
-Linux: ~/.local/share/BetterDiscord/plugins
+- **Фейковый мут**: Выглядите замьюченным для других, но продолжайте говорить и слышать.
+- **Настраиваемые комбинации клавиш**: Назначайте комбинации (например, `Ctrl+Shift+Numpad1`) для переключения фейкового мута.
+- **Поддержка NumPad**: Отдельное распознавание клавиш цифровой клавиатуры (например, `Numpad1` против `Digit1`).
+- **Интеграция с интерфейсом**: Кнопка использует нативные стили Discord и корректно выравнивается.
+- **Панель настроек**: Настройка комбинаций клавиш в настройках плагина BetterDiscord.
 
+## Установка
 
+1. **Установите BetterDiscord**:
+   - Если у вас ещё нет BetterDiscord, следуйте инструкциям на [официальном сайте BetterDiscord](https://betterdiscord.app/).
+2. **Скачайте плагин**:
+   - Загрузите файл `FakeMute.plugin.js` из раздела [Releases](https://github.com/your-repo/FakeMute/releases) или клонируйте этот репозиторий.
+3. **Разместите плагин**:
+   - Переместите файл `FakeMute.plugin.js` в папку плагинов BetterDiscord:
+     - **Windows**: `%appdata%\BetterDiscord\plugins`
+     - **Mac**: `~/Library/Application Support/BetterDiscord/plugins`
+     - **Linux**: `~/.local/share/BetterDiscord/plugins`
+4. **Активируйте плагин**:
+   - Откройте Discord, перейдите в **Настройки пользователя > Плагины** и включите плагин **FakeMute**.
+5. **Перезагрузите Discord**:
+   - Нажмите `Ctrl+R` (или `Cmd+R` на Mac), чтобы перезагрузить Discord и активировать плагин.
 
+## Использование
 
-Enable the Plugin:
-Open Discord, go to User Settings > Plugins, and enable the FakeMute plugin.
+1. **Найдите кнопку**:
+   - После активации плагина в панели управления голосом Discord появится кнопка с иконкой наушников рядом с кнопками мута и дефена.
+2. **Переключение фейкового мута**:
+   - Нажмите на кнопку, чтобы включить или выключить фейковый мут. При включении кнопка станет красной, и вы будете выглядеть замьюченным, но сможете говорить и слышать.
+3. **Настройка комбинации клавиш**:
+   - Перейдите в **Настройки пользователя > Плагины > FakeMute > Открыть настройки плагина**.
+   - Нажмите на поле ввода для хоткея и введите комбинацию клавиш (например, `Ctrl+Shift+F6` или `Numpad1`).
+   - Комбинация будет сохранена и отображена в панели настроек.
+4. **Использование комбинации клавиш**:
+   - Нажмите назначенную комбинацию клавиш для переключения фейкового мута без использования кнопки.
+5. **Устранение неполадок**:
+   - Если кнопка не появляется, перезагрузите Discord (`Ctrl+R`) или проверьте консоль (`Ctrl+Shift+I`) на наличие ошибок.
+   - Убедитесь, что BetterDiscord установлен корректно и плагин включён.
 
+## Настройка
 
-Reload Discord: Press Ctrl+R (or Cmd+R on Mac) to reload Discord and activate the plugin.
+- **Настройка комбинаций клавиш**:
+  - В настройках плагина нажмите на поле ввода и введите комбинацию клавиш, включая `Ctrl`, `Shift`, `Alt` и основную клавишу (включая клавиши NumPad).
+  - Примеры комбинаций: `Ctrl+Numpad1`, `Shift+F6`, `Ctrl+Shift+Enter`.
+  - Текущая комбинация отображается в панели настроек.
+- **Поддержка NumPad**:
+  - Клавиши NumPad (например, `Numpad1`) распознаются отдельно от клавиш основной клавиатуры (например, `Digit1`).
 
-Usage
+## Примечания
 
-Locate the Button:
-After enabling the plugin, a headphone icon button will appear next to the mute and deafen buttons in Discord's voice control panel.
+- Плагин использует `BdApi` от BetterDiscord для сохранения настроек комбинаций клавиш, обеспечивая совместимость с окружением BetterDiscord.
+- Если возникают проблемы, проверьте консоль (`Ctrl+Shift+I`) на наличие логов ошибок и убедитесь, что плагин обновлён до последней версии.
+- Плагин модифицирует данные WebSocket для имитации состояния мута. Используйте с осторожностью, так как это может быть обнаружено Discord.
 
+## Предупреждение
 
-Toggle Fake Mute:
-Click the button to enable or disable fake mute. When enabled, the button turns red, and you appear muted to others but can still speak and hear.
+Этот плагин может нарушать Условия использования Discord, так как изменяет ожидаемое поведение функции мута. Использование может привести к ограничениям или блокировке аккаунта. Автор не несёт ответственности за последствия использования плагина.
 
+## Участие в разработке
 
-Set a Keybind:
-Go to User Settings > Plugins > FakeMute > Open Plugin Settings.
-Click the keybind input field and press a key combination (e.g., Ctrl+Shift+F6 or Numpad1).
-The keybind will be saved and displayed in the settings panel.
+Приветствуются любые вклады! Пожалуйста, создайте форк репозитория, внесите изменения и отправьте pull request. Убедитесь, что ваш код соответствует стилю проекта и содержит соответствующие комментарии.
 
+## Лицензия
 
-Use the Keybind:
-Press the assigned key combination to toggle fake mute without clicking the button.
+Проект распространяется под лицензией MIT. Подробности см. в файле [LICENSE](LICENSE).
 
+## Благодарности
 
-Troubleshooting:
-If the button doesn't appear, reload Discord (Ctrl+R) or check the console (Ctrl+Shift+I) for errors.
-Ensure BetterDiscord is properly installed and the plugin is enabled.
-
-
-
-Configuration
-
-Keybind Customization:
-In the plugin settings, click the keybind input field and press any combination of Ctrl, Shift, Alt, and a main key (including NumPad keys).
-Example keybinds: Ctrl+Numpad1, Shift+F6, Ctrl+Shift+Enter.
-The current keybind is displayed in the settings panel.
-
-
-NumPad Support: NumPad keys (e.g., Numpad1) are treated separately from main keyboard keys (e.g., Digit1).
-
-Notes
-
-The plugin uses BetterDiscord's BdApi for storing keybind settings, ensuring compatibility with BetterDiscord's environment.
-If you encounter issues, check the console (Ctrl+Shift+I) for error logs and ensure the plugin is up to date.
-This plugin modifies WebSocket data to simulate a muted state. Use cautiously, as it may be detected by Discord.
-
-Warning
-This plugin may violate Discord's Terms of Service, as it alters the expected behavior of the mute function. Using it could result in account restrictions or bans. The author is not responsible for any consequences of using this plugin.
-Contributing
-Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. Ensure your code follows the existing style and includes appropriate comments.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-Acknowledgments
-
-Built for BetterDiscord, a client modification for Discord.
-Inspired by the need for flexible voice control in Discord.
+- Создано для BetterDiscord, модификации клиента Discord.
+- Идея плагина вдохновлена потребностью в гибком управлении голосом в Discord.
