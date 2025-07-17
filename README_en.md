@@ -1,8 +1,8 @@
-# FakeMute Plugin for BetterDiscord
+# FakeMuteX Plugin for BetterDiscord
 
 ## Overview
 
-**FakeMute** is a BetterDiscord plugin that allows you to fake mute yourself in Discord voice channels, appearing muted to others while still being able to speak and hear. The plugin adds a headphone icon button next to the mute and deafen buttons in the Discord interface, with support for customizable keybind combinations, including NumPad keys.
+**FakeMuteX** is a BetterDiscord plugin that allows you to fake mute yourself in Discord voice channels, appearing muted to others while still being able to speak and hear. The plugin adds a headphone icon button next to the mute and deafen buttons in the Discord interface, with support for customizable keybind combinations, including NumPad keys.
 
 > **Warning**: Using this plugin may violate Discord's Terms of Service. Use at your own risk.
 
@@ -18,9 +18,9 @@
 1. **Install BetterDiscord**:
    - If you haven't already, install BetterDiscord by following the instructions on the [official BetterDiscord website](https://betterdiscord.app/).
 2. **Download the Plugin**:
-   - Download the `FakeMute.plugin.js` file from the [Releases](https://github.com/mrcrossog/FakeMuteX/releases) page or clone this repository.
+   - Download the `FakeMuteX.plugin.js` file from the [Releases](https://github.com/mrcrossog/FakeMuteX/releases) page or clone this repository.
 3. **Place the Plugin**:
-   - Move the `FakeMute.plugin.js` file to your BetterDiscord plugins folder:
+   - Move the `FakeMuteX.plugin.js` file to your BetterDiscord plugins folder:
      - **Windows**: `%appdata%\BetterDiscord\plugins`
      - **Mac**: `~/Library/Application Support/BetterDiscord/plugins`
      - **Linux**: `~/.local/share/BetterDiscord/plugins`
