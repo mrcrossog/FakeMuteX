@@ -34,7 +34,7 @@
 1. **Locate the Button**:
    - After enabling the plugin, a headphone icon button will appear next to the mute and deafen buttons in Discord's voice control panel.
 2. **Toggle Fake Mute**:
-   - Click the button to enable or disable fake mute. When enabled, the button turns red, and you appear muted to others but can still speak and hear.
+   - While in the voice channel, press the button to turn the fake mute on or off. Then turn off the sound and then turn it back on. You will appear muted, but you will be able to speak and hear.
 3. **Set a Keybind**:
    - Go to **User Settings > Plugins > FakeMute > Open Plugin Settings**.
    - Click the keybind input field and press a key combination (e.g., `Shift+F6`).
